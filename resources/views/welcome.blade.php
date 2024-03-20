@@ -24,7 +24,37 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
         </button> 
-  </div>
+        </div>
+        <div>
+        @if (Route::has('login'))
+                            <nav class="-mx-3 flex flex-1 justify-end">
+                                @auth
+                                    <a
+                                        href="{{ url('/dashboard') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Dashboard
+                                    </a>
+                                @else
+                                    <a
+                                        href="{{ route('login') }}"
+                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                    >
+                                        Log in
+                                    </a>
+
+                                    @if (Route::has('register'))
+                                        <a
+                                            href="{{ route('register') }}"
+                                            class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+                                        >
+                                            Register
+                                        </a>
+                                    @endif
+                                @endauth
+                            </nav>
+                        @endif
+        </div>
 </nav>
     <!--Navbar main implementation-->
     <!--Main header title-->
@@ -52,11 +82,8 @@
     <!--Main header title-->
     <!--Second Frame on the main page-->
 <div class="container-full">
-            <div class="container-small bg-white">
-            <br>
-            <h1 style="font-family: Oswald;  text-align: center; text-black">You handle the food we handle the rest <i class="fa-solid fa-exclamation"></i></h1>
-            </div>
-            <section class="w-100 vh-100 d-flex flex-column justify-content-center secheader"></section>
+
+            <section class="w-100 vh-100 d-flex flex-column justify-content-center secheader"><h1 style="font-family: Oswald;  text-align: center; text-black">You handle the food we handle the rest <i class="fa-solid fa-exclamation"></i></h1></section>
 </div>
     <!--Second Frame on the main page-->
     <!--Third Frame on the main page-->
