@@ -11,6 +11,8 @@ Route::get('/', function () {
 /*Routing based on controller method */
 Route::get('Ipoh',[Controller::class,'ipoh']);
 Route::get('Bookingindex',[Controller::class,'Bookingindex']);
+Route::get('MikerPizza',[Controller::class,'mikerpizza']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

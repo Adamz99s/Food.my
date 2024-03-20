@@ -86,46 +86,7 @@
             <section class="w-100 vh-100 d-flex flex-column justify-content-center secheader"><h1 style="font-family: Oswald;  text-align: center; text-black">You handle the food we handle the rest <i class="fa-solid fa-exclamation"></i></h1></section>
 </div>
     <!--Second Frame on the main page-->
-    <!--Third Frame on the main page-->
-<div class="container">
-            <br><br><br>
-            <h1 style="font-family: Oswald;  text-align: center; text-black">Find us in these cities and <u>many more</u> <i class="fa-solid fa-exclamation"></i></h1>
-            <br>
-            <div class="container">
-                <a href="/Ipoh">
-                <div class="box">
-            <div class="imgBox">
-                <img src="https://lp-cms-production.imgix.net/2019-06/9fc39c1710eb3109b74a3e839b2ed351-ipoh.jpg" alt="Ipoh Perak img">
-            </div>
-            <div class="content">
-                <h2>IPOH</br>
-                <span>Perak.</span></h2>
-            </div>
-        </div>
-                </a>
-       
-        <div class="box">
-            <div class="imgBox">
-                <img src="https://cdn.britannica.com/49/102749-050-B4874C95/Kuala-Lumpur-Malaysia.jpg" alt="Kuala Lumpur img">
-            </div>
-            <div class="content">
-                <h2>KUALA LUMPUR</br>
-                <span>Wilayah Persekutuan.</span></h2>
-            </div>
-        </div>
-        <div class="box">
-            <div class="imgBox">
-                <img src="https://www.ontourmalaysia.com/wp-content/uploads/2020/09/putrajaya-one-day-tour.jpg" alt="Putrajaya img">
-            </div>
-            <div class="content">
-                <h2>PUTRAJAYA</br>
-                <span>Selangor.</span></h2>
-            </div>
-        </div>
-    </div>
-            
-</div>
-
+ 
   
     
 </body>

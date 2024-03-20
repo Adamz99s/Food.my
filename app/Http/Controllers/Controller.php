@@ -16,4 +16,8 @@ class Controller
     {
         return view ('Booking.Bookingindex');
     }
+    public function mikerpizza()
+    {
+        return view('Locations.MikerPizza');
+    }
 }

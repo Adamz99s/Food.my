@@ -17,13 +17,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <title>Food.my order</title>
+        <title>Food.my Ipoh</title>
        
 
         
 </head>
 <body class="vh-100 overflow-auto antialiased">
-    @include('Booking.BookingNav')
+    @include('Locations.LocationsNav')
 
 
     <main>
