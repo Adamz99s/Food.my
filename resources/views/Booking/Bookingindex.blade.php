@@ -1,11 +1,11 @@
 @extends('Booking.BookingHeader')
 
 @section('content')
-<section class="w-100 vh-100 d-flex flex-column justify-content-center headermain ">
-    <h1 class="centered-text fade-in-text" style="font-family: Chewy;">Choose your desire location !</h1>
+<section class="w-100 vh-100 d-flex flex-column justify-content-center  ">
+    <h1 class="centered-text fade-in-text" style="font-family: Poppins;">Choose your desire location !</h1>
 </section>
 
-<section class="w-100 vh-100 d-flex flex-column justify-content-center headermain ">
+<section class="w-100 vh-100 d-flex flex-column justify-content-center ">
        <!--Third Frame on the main page-->
 <div class="container">
             <br><br><br>
@@ -47,7 +47,7 @@
 </div>
 </section>
 
-<section class="w-100 vh-100 d-flex flex-column justify-content-center headermain ">
+<section class="w-100 vh-100 d-flex flex-column justify-content-center  ">
     
 </section>
 @endsection
