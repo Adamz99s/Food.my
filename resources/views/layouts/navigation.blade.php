@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+                    <img src="{{ URL::asset('images/Food.my_logo.png')}}" alt="" width="200" height="50">
                     </a>
                 </div>
 
@@ -37,6 +37,9 @@
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
                         </x-dropdown-link>
+                      
+                       
+
 
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
