@@ -62,7 +62,11 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allow
 - Download the installer suitable for your operating system.
 - Follow the installation instructions provided on the website.
 
-### Integrating Node.js with Laravel (Optional)
+### 7. Mysql
+- Ensure you download .mysql file and insert it into 'PHPMyAdmin' in order to perform Login and Registration.
+- File Availability can be received at Releases section.
+
+### Integrating Node.js with Laravel (Compulsory)
 If your Laravel application requires Node.js for front-end asset compilation or other tasks, you can integrate it using tools like Laravel Mix. Here's how to do it:
 
 - Ensure you have Node.js and npm (Node Package Manager) installed on your system.
@@ -80,3 +84,6 @@ If your Laravel application requires Node.js for front-end asset compilation or 
 - Consult the Laravel documentation for more information on integrating Node.js and npm with your Laravel project.
 
 With Node.js added to the setup, you should now have a comprehensive development environment ready for Laravel application development. If you encounter any issues or have questions about integrating Node.js with your Laravel project, refer to the documentation or seek assistance from the developer community.
+
+### TASK PROGRESSION 
+- Unable to complete the task due to time constraints but feel free validate my work, Thank You for this Opportunity!.
