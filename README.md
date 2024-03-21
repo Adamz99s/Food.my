@@ -1,66 +1,82 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**System Requirements and Setup Guide**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This guide outlines the necessary steps to set up a system that utilizes Visual Studio Code, Laravel, XAMPP, Composer, and Spatie. These tools are essential for developing web applications using the Laravel framework. Please follow the instructions provided below to ensure a smooth setup process.
 
-## About Laravel
+### 1. Visual Studio Code
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS, and Linux. To install Visual Studio Code, follow these steps:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Visit the [Visual Studio Code website](https://code.visualstudio.com/).
+- Download the installer suitable for your operating system.
+- Follow the installation instructions provided on the website.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 2. Laravel
+Laravel is a PHP web application framework with expressive, elegant syntax. To install Laravel, you need to have PHP and Composer installed on your system. Follow these steps:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Open a terminal or command prompt.
+- Install Composer by following the instructions on the [official Composer website](https://getcomposer.org/download/).
+- Once Composer is installed, you can install Laravel by running the following command:
+  ```
+  composer global require laravel/installer
+  ```
+- After installation, make sure to add Composer's system-wide vendor bin directory to your system's $PATH to access the Laravel executable globally.
 
-## Learning Laravel
+### 3. XAMPP
+XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends. It consists mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages. To install XAMPP:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Visit the [XAMPP website](https://www.apachefriends.org/index.html).
+- Download the installer suitable for your operating system.
+- Follow the installation instructions provided on the website.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 4. Composer
+Composer is a dependency manager for PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you. To install Composer:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Visit the [official Composer website](https://getcomposer.org/download/).
+- Follow the installation instructions provided for your operating system.
 
-## Laravel Sponsors
+### 5. Spatie
+Spatie is a popular PHP package development company. They provide various useful packages that can be integrated into Laravel applications. To integrate Spatie packages into your Laravel application:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Open your Laravel project in Visual Studio Code.
+- Edit your `composer.json` file to require the desired Spatie package. For example:
+  ```json
+  {
+      "require": {
+          "spatie/laravel-permission": "^5.0"
+      }
+  }
+  ```
+- Run `composer update` to install the package and its dependencies.
+- Follow the specific instructions provided by the Spatie package documentation for further configuration and usage.
 
-### Premium Partners
+### Additional Notes:
+- Ensure that your system meets the minimum requirements for each of the mentioned tools.
+- It's recommended to regularly update your dependencies to benefit from the latest features and security patches.
+- Refer to the official documentation of each tool for more detailed information and troubleshooting tips.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Following these steps should enable you to set up a development environment using Visual Studio Code, Laravel, XAMPP, Composer, and Spatie efficiently. If you encounter any issues during the setup process, don't hesitate to consult the respective documentation or seek assistance from the developer community.
 
-## Contributing
+### 6. Node.js
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript code on the server-side. Some Laravel applications may require Node.js for front-end build processes or other functionalities. To install Node.js:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Visit the [Node.js website](https://nodejs.org/).
+- Download the installer suitable for your operating system.
+- Follow the installation instructions provided on the website.
 
-## Code of Conduct
+### Integrating Node.js with Laravel (Optional)
+If your Laravel application requires Node.js for front-end asset compilation or other tasks, you can integrate it using tools like Laravel Mix. Here's how to do it:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Ensure you have Node.js and npm (Node Package Manager) installed on your system.
+- Navigate to your Laravel project directory in the terminal.
+- Install Laravel Mix by running:
+  ```
+  npm install laravel-mix --save-dev
+  ```
+- Laravel Mix will use webpack behind the scenes to compile assets. You can configure Mix in your `webpack.mix.js` file, located in the root directory of your Laravel project.
+- After configuring Mix, you can compile your assets by running `npm run dev` or `npm run watch` to watch for changes and automatically recompile.
 
-## Security Vulnerabilities
+### Additional Notes:
+- Node.js may not be necessary for all Laravel projects, but it can be useful for applications with front-end requirements.
+- Make sure to install Node.js and npm globally on your system to access them from the command line.
+- Consult the Laravel documentation for more information on integrating Node.js and npm with your Laravel project.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+With Node.js added to the setup, you should now have a comprehensive development environment ready for Laravel application development. If you encounter any issues or have questions about integrating Node.js with your Laravel project, refer to the documentation or seek assistance from the developer community.
