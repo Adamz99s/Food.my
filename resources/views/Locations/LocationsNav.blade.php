@@ -36,5 +36,8 @@
                             </nav>
                         @endif
         </div>
+        <div>
+        <i class="fa-solid fa-cart-shopping"><small style="font-family: Poppins;">cart</small></i>
+        </div>
 </nav>
     <!--Navbar main implementation-->

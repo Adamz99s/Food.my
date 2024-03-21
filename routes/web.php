@@ -3,10 +3,14 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+//spatie validation//
+Route::get('dashboard', [HomeController::class, 'index'])->middleware('auth')->name('home');
 
 /*Routing based on controller method */
 Route::get('Ipoh',[Controller::class,'ipoh']);
@@ -31,5 +35,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
   
 });
+
+Route::view('welcome', 'welcome')
+->middleware(['auth', 'verified'])
+->name('welcome');
 
 require __DIR__.'/auth.php';

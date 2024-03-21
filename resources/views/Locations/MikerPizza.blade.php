@@ -15,7 +15,11 @@
   <div class="card-body">
     <h5 class="card-title">Pepperoni Pizza | RM 15.00</h5>
     <p class="card-text">Made with fresh ingredients ! Every bite warms your heart </p>
-    <a href="#" class="btn btn-primary">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+    <form action="">
+      @csrf
+      <input type="text" name="product_id">
+      <a href="#" class="btn btn-primary">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+    </form>
   </div>
 </div>
     </div>
