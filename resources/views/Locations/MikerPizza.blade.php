@@ -17,7 +17,7 @@
     <p class="card-text">Made with fresh ingredients ! Every bite warms your heart </p>
     <form action="">
       @csrf
-      <input type="text" name="product_id">
+      <input type="text">
       <a href="#" class="btn btn-primary">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
     </form>
   </div>

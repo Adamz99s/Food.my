@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Stripecontroller;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,6 +17,14 @@ Route::get('dashboard', [HomeController::class, 'index'])->middleware('auth')->n
 Route::get('Ipoh',[Controller::class,'ipoh']);
 Route::get('Bookingindex',[Controller::class,'Bookingindex']);
 Route::get('MikerPizza',[Controller::class,'mikerpizza']);
+Route::get('Cart',[Controller::class,'cart']);
+
+//Stripe Implementation//
+
+
+Route::get('/', [Stripecontroller::class,'index'])->name('index');
+Route::post('/checkout',[Stripecontroller::class, 'checkout'])->name('checkout');
+Route::get('/success',[Stripecontroller::class,'success'])->name('success');
 
 
 Route::get('/dashboard', function () {

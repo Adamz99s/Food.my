@@ -20,4 +20,8 @@ class Controller
     {
         return view('Locations.MikerPizza');
     }
+    public function cart()
+    {
+        return view('Locations.Cart');
+    }
 }

@@ -37,7 +37,7 @@
                         @endif
         </div>
         <div>
-        <i class="fa-solid fa-cart-shopping"><small style="font-family: Poppins;">cart</small></i>
+            <a href="/Cart"><i class="fa-solid fa-cart-shopping"><small style="font-family: Poppins;">cart</small></i></a>
         </div>
 </nav>
     <!--Navbar main implementation-->
