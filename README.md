@@ -56,11 +56,18 @@ Spatie is a popular PHP package development company. They provide various useful
 Following these steps should enable you to set up a development environment using Visual Studio Code, Laravel, XAMPP, Composer, and Spatie efficiently. If you encounter any issues during the setup process, don't hesitate to consult the respective documentation or seek assistance from the developer community.
 
 ### 6. Node.js
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript code on the server-side. Some Laravel applications may require Node.js for front-end build processes or other functionalities. To install Node.js:
+Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows you to run JavaScript code on the server-side. Some Laravel applications may require Node.js for front-end build processes or other functionalities.
 
-- Visit the [Node.js website](https://nodejs.org/).
-- Download the installer suitable for your operating system.
-- Follow the installation instructions provided on the website.
+To install Node.js and npm and integrate them with Laravel, follow the steps below:
+
+1. Download Node.js and npm: Visit the official Node.js website ([https://nodejs.org](https://nodejs.org/)) and download the installer based on your OS. This will install both Node.js and npm. You can check the successful installation by running `node -v` and `npm -v` in your terminal.
+2. After successfully installing Node.js and npm, navigate to your Laravel project directory.
+3. You need to install the necessary Laravel Mix dependencies. Laravel Mix provides a clean, fluent API for defining basic webpack build steps for your Laravel application. Run `npm install` in your terminal.
+4. Now, you can compile your assets using Laravel Mix. Run `npm run dev` in your terminal. This command will compile your assets for development.
+5. Start the Laravel server by running `php artisan serve` in your terminal. This command will start the Laravel development server.
+6. Open your browser and visit the application url (usually [http://localhost:8000](http://localhost:8000/)) to see your Laravel application.
+
+Remember to replace '8000' with the port number your server is running on if it's different.
 
 ### 7. Mysql
 - Ensure you download .mysql file and insert it into 'PHPMyAdmin' in order to perform Login and Registration.
@@ -69,17 +76,7 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allow
 ### 8. (.env)
 - Ensure that you change the (.envexample) to (.env) and rename its database content as (mysql) with (food.my) as database name.
 
-### Integrating Node.js with Laravel (Compulsory)
-If your Laravel application requires Node.js for front-end asset compilation or other tasks, you can integrate it using tools like Laravel Mix. Here's how to do it:
 
-- Ensure you have Node.js and npm (Node Package Manager) installed on your system.
-- Navigate to your Laravel project directory in the terminal.
-- Install Laravel Mix by running:
-  ```
-  npm install laravel-mix --save-dev
-  ```
-- Laravel Mix will use webpack behind the scenes to compile assets. You can configure Mix in your `webpack.mix.js` file, located in the root directory of your Laravel project.
-- After configuring Mix, you can compile your assets by running `npm run dev` or `npm run watch` to watch for changes and automatically recompile.
 
 ### Additional Notes:
 - Node.js may not be necessary for all Laravel projects, but it can be useful for applications with front-end requirements.
