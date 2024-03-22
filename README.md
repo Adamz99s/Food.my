@@ -66,6 +66,9 @@ Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allow
 - Ensure you download .mysql file and insert it into 'PHPMyAdmin' in order to perform Login and Registration.
 - File Availability can be received at Releases section.
 
+### 8. (.env)
+- Ensure that you change the (.envexample) to (.env) and rename its database content as (mysql) with (food.my) as database name.
+
 ### Integrating Node.js with Laravel (Compulsory)
 If your Laravel application requires Node.js for front-end asset compilation or other tasks, you can integrate it using tools like Laravel Mix. Here's how to do it:
 
